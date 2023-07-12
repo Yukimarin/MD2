@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 function CardShorts(props) {
   const { element } = props;
   const userLogin = JSON.parse(localStorage.getItem("userLogin"));
-  const handleBuy = (id) => {};
+  const handleBuy = (id) => {
+    console.log(id);
+  };
   return (
     <div className='product'>
       <div className='product-details'>
